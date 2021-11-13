@@ -28,14 +28,14 @@ class Car extends Vehicle
 
     public function start():string
     {
-        return 'la ' . $this->model . " est allumée !" . "<br>" ;
+        return 'la ' . $this->model . " est allumée !" . PHP_EOL ;
     }
 
     public function forward(): string
     {
         $this->currentSpeed = 15;
 
-        return "Go !" . "<br>";
+        return "Go !" . PHP_EOL;
     }
 
     public function brake(): string
@@ -49,11 +49,11 @@ class Car extends Vehicle
 
             $this->currentSpeed--;
 
-            $sentence .= "calm down !". "<br>";
+            $sentence .= "calm down !". PHP_EOL;
 
         }
 
-        $sentence .= "I'm stopped !" . "<br>";
+        $sentence .= "I'm stopped !" . PHP_EOL;
 
         return $sentence;
 

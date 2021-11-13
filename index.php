@@ -22,7 +22,7 @@ var_dump(Car::ALLOWED_ENERGIES);
 $camion = new truck ('white', 4, 40, 20 , 'fuel');
 
 var_dump($camion);
-echo $camion->loadingState(40, 20);
+echo $camion->loadingState(40, 20). PHP_EOL ;
 
 echo $camion->forward();
 echo $camion->brake();
